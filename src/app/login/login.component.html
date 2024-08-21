@@ -1,0 +1,13 @@
+
+<ng-container *ngIf="alreadyLoggedIn; else loginpage" >
+  <p>User logged in successfully</p>
+</ng-container>
+<ng-template #loginpage>
+<button
+          (click)="sendOtp()"
+        >
+          Login
+</button>
+
+</ng-template>
+
